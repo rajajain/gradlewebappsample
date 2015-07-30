@@ -1,0 +1,11 @@
+subprojects {
+   apply plugin : "java"
+  apply plugin: "docker"
+    repositories {
+      mavenCentral()
+   }
+   dependencies {
+	classpath 'se.transmode.gradle:gradle-docker:1.2'
+         classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3.5'
+    }
+}
